@@ -1,0 +1,45 @@
+.contact-me{
+    background-color: #222222;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+.contact-me h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+    font-size: 2.25rem;
+}
+form{
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 25rem;
+    padding: 2rem;
+    width:100%;
+}
+select, input{
+    background-color: transparent;
+    display: block;
+    margin-bottom:.75rem; 
+    border:none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    color: #ffffff;
+    -webkit-appearance: none;
+    font-size:1.35rem;
+    padding: .5em;
+    max-width: 25rem;
+    width:100%;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    background-color:#F16521;
+    border:none;
+    color: #ffffff;
+    font-size: 1.025rem;
+    margin-top: 3rem;
+    max-width: 25rem;
+    padding: 1rem;
+    width: 100%;
+
+}

@@ -1,0 +1,16 @@
+.help-section{
+    background-color: #F0ECEC ;
+    box-sizing: border-box;
+    padding: 4rem 0;
+    text-align: center;
+    width: 100%;
+}
+.help-section h2{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.help-section .pure-button{
+    background-color: #F16521;
+    color: #ffffff;
+    padding: 1rem;
+}

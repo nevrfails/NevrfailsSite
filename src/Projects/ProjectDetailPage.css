@@ -1,0 +1,15 @@
+.project-details{
+    padding:1rem;
+}
+.project-details h3{
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+.project-details h5{
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
+
+}
