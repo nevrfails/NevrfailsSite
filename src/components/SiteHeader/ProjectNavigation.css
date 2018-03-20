@@ -12,6 +12,11 @@
     overflow-x: auto;
     right: initial;
 }
+
+.project-navigation nav ul{
+    list-style: none;
+}
+
 .project-navigation nav ul li{
     width:25%;
     text-align: center;
@@ -19,5 +24,6 @@
 .project-navigation a{
     color:#222222;
     padding:1rem 0;
+    text-decoration: none;
     width: 100%;
 }

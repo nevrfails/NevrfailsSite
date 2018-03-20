@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 .project-card_inner{
-    background-image: url(https://picsum.photos/600/350);
+    /*background-image: url(https://picsum.photos/600/350);*/
     background-size: cover;
     background-position: center;
     margin:.5rem;
@@ -34,6 +34,7 @@
 .project-card h2{
     font-size: 2.25rem;
     margin-bottom: .5rem;
+    padding: 0 1rem;
 }
 .project-card h5{
     font-size: 1.125rem;

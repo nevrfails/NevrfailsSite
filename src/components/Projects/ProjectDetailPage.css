@@ -1,0 +1,41 @@
+.project-details{
+    padding:1rem;
+    box-sizing: border-box;
+}
+.project-details hgroup{
+    margin-bottom: 2rem;
+}
+.project-details h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: .25rem;
+}
+.project-details h5{
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
+
+}
+.ant-carousel{
+    box-sizing: border-box;
+    background: #364d79;
+    width:100%;
+}
+
+.ant-carousel .slick-slide {
+    max-height: 30rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .ant-carousel .slick-slide {
+    width: 100%;
+}
+
+.project-image{
+    padding:15rem 0;
+    display: block;
+}
+  

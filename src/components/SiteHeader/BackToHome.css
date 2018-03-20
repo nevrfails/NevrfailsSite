@@ -1,0 +1,14 @@
+.back-button {
+    width: 100%;
+    display: block;
+    min-height: 50px;
+    clear: both;
+    overflow: hidden;
+    padding: 0rem 1rem;
+    background-color:#F0ECEC ;
+}
+.back-button a {
+    line-height: 50px;
+    color: #222222;
+    text-decoration:none;
+}
