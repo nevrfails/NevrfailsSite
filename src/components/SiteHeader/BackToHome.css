@@ -1,11 +1,16 @@
 .back-button {
     width: 100%;
     display: block;
+    box-sizing: border-box;
     min-height: 50px;
     clear: both;
     overflow: hidden;
     padding: 0rem 1rem;
     background-color:#F0ECEC ;
+}
+.back-button a:before {
+    content: '◀';
+    font-size: .75rem;
 }
 .back-button a {
     line-height: 50px;

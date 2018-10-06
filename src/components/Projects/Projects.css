@@ -1,5 +1,19 @@
 .projects{
     box-sizing: border-box;
     border:none;
-    padding: .5rem;
+    margin-top: 5vh;
+}
+.projects header {
+  padding:1rem 0.5rem;
+}
+.projects header h2{
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.card-container{
+  width: 100%;
+  white-space: nowrap;
+  overflow: scroll;
+  height: 60vh;
 }

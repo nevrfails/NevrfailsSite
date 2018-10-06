@@ -1,7 +1,14 @@
+.site-footer{
+  position: fixed;
+  bottom:6rem;
+  left: 0;
+  right: 0;
+  height:0;
+  text-align: center;
+}
 .help-section{
-    background-color: #F0ECEC ;
     box-sizing: border-box;
-    padding: 4rem 0;
+    padding: 0 0 2rem;
     text-align: center;
     width: 100%;
 }
@@ -10,7 +17,10 @@
     font-weight: 100;
 }
 .help-section .pure-button{
-    background-color: #F16521;
-    color: #ffffff;
+    display: inline-block;
+    background-color: transparent;
+    border:1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
     padding: 1rem;
 }

@@ -15,6 +15,7 @@
 
 .project-navigation nav ul{
     list-style: none;
+    padding: 0;
 }
 
 .project-navigation nav ul li{

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 import './BackToHome.css';
 
-function BackToHome(){
+const BackToHome = () => {
     return(
         <div className="back-button">
-            <Link to="/"> &#9664; Back</Link>
+            <Link to="/"> Back</Link>
         </div>
     ); 
 }
