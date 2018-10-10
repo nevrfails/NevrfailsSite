@@ -5,6 +5,6 @@ import { Consumer } from '../../context/context';
 
 export default props => (
   <Consumer>
-    {({props}) => <ProjectDetails {...props} detailsPanelVisibleClickHandler = {detailsPanelVisible}/> }
+    {({props, detailsPanelClose}) => <ProjectDetails {...props} detailsPanelCloseClickHandler = {detailsPanelClose}/> }
   </Consumer>
   );

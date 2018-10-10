@@ -11,7 +11,6 @@ constructor(props){
 
   this.database.on('child_added', snap => {
     
-
   });
 
   this.state = {
@@ -54,8 +53,7 @@ constructor(props){
       }
     ],
     panelOpen: false,
-    detailsPanel: false,
-    selectedProject : ''
+    detailsPanel: false
   }
 }
 
@@ -63,18 +61,18 @@ constructor(props){
 openPanelToggle = () => {
   this.setState((prevState)=>{
       return {panelOpen: !prevState.panelOpen}
-          
   });
 };
 closePanelToggle = () => {
   this.setState({panelOpen: false})
 }
-detailsPanelVisible = ()=>{
+detailsPanelOpen = ()=>{
+  this.setState({detailsPanel: true})
+}
+detailsPanelClose = ()=>{
   this.setState({detailsPanel: false})
 }
-projectSelected = (e) =>{
-  console.log(e);
-}
+
 
 render() {
   return (
@@ -82,8 +80,8 @@ render() {
       ...this.state,
       openPanelToggle: this.openPanelToggle,
       closePanelToggle: this.closePanelToggle,
-      detailsPanelVisible: this.detailsPanelVisible,
-      projectSelected: this.projectSelected
+      detailsPanelOpen: this.detailsPanelOpen,
+      detailsPanelClose: this.detailsPanelClose
     }}>
       {this.props.children}
     </Context.Provider>

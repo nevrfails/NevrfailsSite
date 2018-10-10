@@ -12,25 +12,24 @@ export class Projects extends Component {
     // }
 
     render() {
-    const { projects, projectSelectedClickHandler } = this.props;
-    
-    console.log(projects)  
-    
+    const { projects, detailsPanelOpenClickHandler } = this.props;
     return (
-            <Fragment>
+            <Fragment key={this.props.key}>
                 <div className = "projects">
                     <header> <h2> Projects </h2> </header>
                     <div className = "card-container">
                     {projects.map((project, i) => {
                         return (
-                            <ProjectCard projectSelected = {projectSelectedClickHandler} key = { i } projectfeatureimage = { project.projectFeatureImage } projecttitle = { project.projectTitle } projecttype = { project.projectType } />
+                            <ProjectCard detailsPanelOpenClickHandler = {detailsPanelOpenClickHandler} key = { i } projectfeatureimage = { project.projectFeatureImage } projecttitle = { project.projectTitle } projecttype = { project.projectType } />
                             );    
                         })
+                       
                     }
                     </div>
                     <SiteFooter />
                 </div>
             </Fragment>
             )
+            
         }
 }
