@@ -4,6 +4,6 @@ import ProjectCard from './ProjectCard';
 
 
 export default props => (
- <Consumer>{({props}) => ({<ProjectCard {...props} />})}
+ <Consumer>{({props}) => {<ProjectCard {...props}/>}}
  </Consumer>
 );

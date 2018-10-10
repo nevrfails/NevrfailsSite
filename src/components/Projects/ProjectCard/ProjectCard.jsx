@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectCard.css';
 
 export default props => (
-    <div className = "project-card">
+    <div className = "project-card" onClick={props.projectSelected}>
         <div className = "project-card_inner" style = {{backgroundImage: `url(${props.projectfeatureimage})`, backgroundSize: 'cover'}}>
         <div className="overlay"></div>
             <hgroup >

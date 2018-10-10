@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(
   <Provider>
     <Consumer>
-    {({ projects, openPanelToggle }) => <App projects = { projects } openPanelToggle = { openPanelToggle } />}
+    {({ panelOpen, projects, openPanelToggle, closePanelToggle, detailsPanelVisible, projectSelected }) => <App panelOpen = {panelOpen} projects = { projects } openPanelToggle = { openPanelToggle } closePanelToggle = {closePanelToggle} detailsPanelVisible = { detailsPanelVisible } projectSelected = { projectSelected }/>}
     </Consumer>
   </Provider>
   ,document.getElementById('root'));

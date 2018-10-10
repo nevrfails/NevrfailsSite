@@ -8,8 +8,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import {SiteHeader} from './components/SiteHeader/SiteHeader';
 import {AboutMe} from './components/AboutMe/AboutMe';
 import {Projects} from './components/Projects/Projects';
-//import ProjectDetailPage from './components/Projects/ProjectDetailPage';
-//import ProjectNavigation from './components/SiteHeader/ProjectNavigation';
+import {ProjectDetails} from './components/Projects/ProjectDetails/ProjectDetails';
 
 
 // Font Awesome reference for the social media icons
@@ -18,18 +17,21 @@ fontawesome.library.add(brands);
 class App extends Component {
 
   render() {
-      let aboutMeShowing;
-
-      if (this.props.panelOpen){
-          aboutMeShowing = <AboutMe />;
-      }
-      const { projects, openPanelToggle } = this.props;
+      
+      const { panelOpen, projects, openPanelToggle, closePanelToggle, detailsPanelVisible, projectSelected } = this.props;
+     
     return (
         <Router>
             <Fragment>
                 <SiteHeader openPanelClickHandler = {openPanelToggle}/>
-                {aboutMeShowing}  
-                <Projects projects ={projects} />
+                <AboutMe panelOpen={panelOpen} closePanelClickHandler = {closePanelToggle} />
+                <Projects projects ={projects} projectSelected = {projectSelected} />
+                {projects.map((projectinfo,i) => {
+                    return(
+                        <ProjectDetails key = { i } projectFeatureImage = {projectinfo.projectFeatureImage} projectTitle={projectinfo.projectTitle} projectType = {projectinfo.projectType} projectDescription = {projectinfo.projectDescription} projectDetailImage1 ={projectinfo.projectDetailImages.image1}  projectDetailImage2 ={projectinfo.projectDetailImages.image2} projectToolsUsed = {projectinfo.projectToolsUsed} detailsPanelVisibleClickHandler = {detailsPanelVisible}/>
+                    )
+                })}
+                
             </Fragment>
         </Router>
     );

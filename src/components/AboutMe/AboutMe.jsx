@@ -8,12 +8,18 @@ const headshot = {
   backgroundImage: 'url('+ Headshot +')'
 }
 
-export const AboutMe = ()=> {
+
+
+export const AboutMe = props => {
+    let panelClasses = 'pure-g about-me';
+    if (props.panelOpen){
+        panelClasses = 'pure-g about-me open';
+    }
         return (
-            <div className='pure-g about-me'>
-            <div className="close-btn"><button>+</button></div>
+            <div className={panelClasses}>
              <div className='pure-u-1'>
                 <div className='headshot' style={headshot}>
+                <button className="close-btn" onClick={props.closePanelClickHandler}><div className="close-btn__icon">+</div></button>
                   <hgroup>
                       <h2>Herston R. Fails</h2>
                       <h3>Creative Problem Solver</h3>

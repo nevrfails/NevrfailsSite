@@ -5,6 +5,6 @@ import { Consumer } from '../../context/context';
 
 export default props => (
   <Consumer>
-    {() => <Projects {...props} />}
+    {({props}) => <Projects {...props} />}
   </Consumer>
   );
